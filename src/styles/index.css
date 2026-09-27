@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg-primary: #000000;
+    --color-bg-surface: #09090b;
+    --color-bg-card: #121215;
+    --color-border: #27272a;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #a1a1aa;
+    --color-text-muted: #71717a;
+  }
+
+  .light {
+    --color-bg-primary: #ffffff;
+    --color-bg-surface: #fafafa;
+    --color-bg-card: #f4f4f5;
+    --color-border: #e4e4e7;
+    --color-text-primary: #000000;
+    --color-text-secondary: #3f3f46;
+    --color-text-muted: #71717a;
+  }
+
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
+/* Global smooth theme transition */
+*, *::before, *::after {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+/* ── Light mode overrides ─────────────────────────────────────────────────── */
+.light {
+  color-scheme: light;
+}
+
+/* Remap dark surface classes in light mode */
+.light .bg-cx-950 { background-color: #ffffff !important; }
+.light .bg-cx-900 { background-color: #f4f4f5 !important; }
+.light .bg-cx-850 { background-color: #e4e4e7 !important; }
+.light .bg-cx-800 { background-color: #d4d4d8 !important; }
+
+/* Remap dark border classes */
+.light .border-cx-800 { border-color: #d4d4d8 !important; }
+.light .border-cx-750 { border-color: #d4d4d8 !important; }
+.light .border-cx-700 { border-color: #a1a1aa !important; }
+
+/* Remap dark text classes */
+.light .text-cx-0   { color: #000000 !important; }
+.light .text-cx-100 { color: #18181b !important; }
+.light .text-cx-200 { color: #27272a !important; }
+.light .text-cx-300 { color: #3f3f46 !important; }
+.light .text-cx-400 { color: #52525b !important; }
+.light .text-cx-500 { color: #71717a !important; }
+
+/* Light mode header/navbar */
+.light header.sticky {
+  background-color: rgba(255,255,255,0.95) !important;
+  border-color: #e4e4e7 !important;
+}
+
+/* Light mode cards */
+.light .shadow-cx-card-dark {
+  box-shadow: 0 4px 25px -2px rgba(0,0,0,0.10), 0 2px 8px -1px rgba(0,0,0,0.06) !important;
+}
+
+/* Light mode: primary CTA buttons stay black-on-white */
+.light .bg-cx-0 {
+  background-color: #000000 !important;
+}
+.light .text-cx-950 {
+  color: #ffffff !important;
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+
+.light ::-webkit-scrollbar-thumb {
+  background: #a1a1aa;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Technical Subtle Grid Background */
+.bg-tech-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.light .bg-tech-grid {
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+}
+
+/* Dot Pattern */
+.bg-tech-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.light .bg-tech-dots {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.12) 1px, transparent 1px);
+}
