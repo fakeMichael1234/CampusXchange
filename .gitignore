@@ -28,3 +28,12 @@ Thumbs.db
 
 # Skill creator temp
 skill-creator/
+
+# Java build output
+backend/target/
+backend/bin/
+backend/.classpath
+backend/.project
+backend/.settings/
+*.timestamp-*.mjs
+
