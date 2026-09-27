@@ -44,7 +44,7 @@ export const StoreProvider = ({ children }) => {
   // Account registry: array of { id, email, hash, profile }
   const [accounts, setAccounts] = useState(() => {
     const saved = ls('cx3_accounts', null);
-    if (saved) return saved;
+    if (saved && Array.isArray(saved) && saved.length > 0) return saved;
     // Seed demo accounts
     return INITIAL_USERS.map(u => ({
       id: u.id,
@@ -96,6 +96,7 @@ export const StoreProvider = ({ children }) => {
   /** Register new student. Returns { success, error? } */
   const signup = (userData) => {
     const emailLower = userData.email.toLowerCase().trim();
+    const passTrim   = (userData.password || '').trim();
 
     // Duplicate check
     if (accounts.find(a => a.email === emailLower)) {
@@ -124,29 +125,36 @@ export const StoreProvider = ({ children }) => {
     const newAccount = {
       id:      newProfile.id,
       email:   emailLower,
-      hash:    simpleHash(userData.password),
+      hash:    simpleHash(passTrim),
       profile: newProfile,
     };
 
-    setAccounts(prev => [...prev, newAccount]);
+    const nextAccounts = [...accounts, newAccount];
+    setAccounts(nextAccounts);
+    lsSet('cx3_accounts', nextAccounts);
+
     setCurrentUser(newProfile);
+    lsSet('cx3_session', newProfile);
+
     showToast(`Welcome to CampusXchange, ${newProfile.name}!`, 'Account Created');
     return { success: true };
   };
 
   /** Login with email + password. Returns { success, error? } */
   const login = (email, password) => {
-    const emailLower = email.toLowerCase().trim();
-    const account = accounts.find(a => a.email === emailLower);
+    const emailLower = (email || '').toLowerCase().trim();
+    const passTrim   = (password || '').trim();
+    const account    = accounts.find(a => a.email === emailLower);
 
     if (!account) {
-      return { success: false, error: 'No account found with this email. Please register first.' };
+      return { success: false, error: 'No account found with this email. Please check your email or register.' };
     }
-    if (account.hash !== simpleHash(password)) {
+    if (account.hash !== simpleHash(passTrim)) {
       return { success: false, error: 'Incorrect password. Please try again.' };
     }
 
     setCurrentUser(account.profile);
+    lsSet('cx3_session', account.profile);
     showToast(`Welcome back, ${account.profile.name}!`, 'Logged In');
     return { success: true };
   };
@@ -160,12 +168,17 @@ export const StoreProvider = ({ children }) => {
   const updateUserProfile = (updatedFields) => {
     const updated = { ...currentUser, ...updatedFields };
     setCurrentUser(updated);
-    // Also update in account registry so next login restores updated profile
-    setAccounts(prev => prev.map(a =>
-      a.email === updated.email.toLowerCase()
-        ? { ...a, profile: updated }
-        : a
-    ));
+    lsSet('cx3_session', updated);
+    
+    setAccounts(prev => {
+      const next = prev.map(a =>
+        (a.id && a.id === updated.id) || a.email === updated.email.toLowerCase()
+          ? { ...a, email: updated.email.toLowerCase(), profile: updated }
+          : a
+      );
+      lsSet('cx3_accounts', next);
+      return next;
+    });
     showToast('Profile updated.', 'Profile Saved');
   };
 

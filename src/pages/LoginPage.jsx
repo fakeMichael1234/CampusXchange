@@ -168,6 +168,21 @@ export const LoginPage = ({ onNavigate }) => {
               </svg>
               <span>Continue with Google</span>
             </button>
+
+            {/* Quick Login Helper */}
+            <div className="pt-2 border-t border-cx-800 space-y-2">
+              <div className="text-[10px] font-mono text-cx-500 uppercase tracking-wider">
+                Quick Demo Account:
+              </div>
+              <button
+                type="button"
+                onClick={() => { setEmail('ananya.s@srmist.edu.in'); setPassword('password123'); setError(''); }}
+                className="w-full text-left p-2.5 rounded-xl bg-cx-950 border border-cx-800 hover:border-cx-600 transition-colors flex items-center justify-between font-mono text-xs text-cx-300"
+              >
+                <span>ananya.s@srmist.edu.in</span>
+                <span className="text-[10px] text-cx-500">password123</span>
+              </button>
+            </div>
           </div>
 
           {/* Footer link */}
