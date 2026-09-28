@@ -25,7 +25,7 @@ export const CreateListingPage = ({ onNavigate }) => {
     condition: 'Like New',
     description: 'Lightly used Dell Intel i7 laptop. Clean body, 6 hour battery backup, original charger included.',
     campus: defaultCampus || INDIAN_CAMPUSES[0],
-    pickupLocation: 'Central Library Lobby / Food Court',
+    pickupLocation: defaultCampus || INDIAN_CAMPUSES[0],
     images: [SAMPLE_PHOTOS[0]]
   });
 
@@ -152,7 +152,7 @@ export const CreateListingPage = ({ onNavigate }) => {
 
             <Input
               label="HANDOVER PICKUP SPOT"
-              placeholder="e.g. Central Library Lobby / SRM Tech Park Gate"
+              placeholder="e.g. SRM IST Ramapuram, Chennai"
               value={formData.pickupLocation}
               onChange={(e) => setFormData({ ...formData, pickupLocation: e.target.value })}
               required

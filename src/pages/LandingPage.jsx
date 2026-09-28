@@ -135,7 +135,7 @@ const HOW_IT_WORKS = [
     step: '04',
     label: 'EXCHANGE',
     title: 'Complete on campus',
-    desc: 'Meet at your college library, food court, or hostel gate. Inspect the item and complete the handover.',
+    desc: 'Meet directly at your college campus. Inspect the item and complete the handover.',
     icon: Package,
   },
 ];
@@ -310,7 +310,7 @@ export const LandingPage = ({ onNavigate }) => {
               <div className="space-y-4">
                 {[
                   'Every account verified with a valid email address',
-                  'Campus-only exchanges — meet at your library, canteen, or hostel gate',
+                  'Campus-only exchanges — meet directly at your college campus',
                   'Student reputation ratings after every successful handover',
                   'Zero shipping costs — everything is within walking distance',
                 ].map((text, i) => (
@@ -343,7 +343,7 @@ export const LandingPage = ({ onNavigate }) => {
                   </div>
                 </div>
                 <p className="text-xs text-cx-400 leading-relaxed">
-                  Every trade happens inside university grounds — at central libraries, student centers, or campus canteens. Inspect the item together before completing the exchange.
+                  Every trade happens inside verified college grounds. Inspect the item together before completing the exchange.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">

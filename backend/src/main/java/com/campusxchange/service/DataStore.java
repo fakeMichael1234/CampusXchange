@@ -76,7 +76,7 @@ public class DataStore {
             "Final Year (2025)", true, 4.9, 24,
             "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
             "Aug 2023", 18,
-            "CS Final Year student interested in AI and Web Dev. Quick handover near SRM Tech Park Lobby or Central Library.",
+            "CS Final Year student interested in AI and Web Dev. Handover at SRM IST Ramapuram, Chennai.",
             defaultHash));
 
         users.add(buildUser("usr_2", "Rohan Verma", "rohan.v@iitm.ac.in",
@@ -84,7 +84,7 @@ public class DataStore {
             "3rd Year (2026)", true, 5.0, 16,
             "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
             "Jan 2024", 12,
-            "EE Junior selling lab components, microcontrollers, and engineering textbooks. Pickup available near Gajendra Circle / Central Library.",
+            "EE Junior selling lab components, microcontrollers, and engineering textbooks. Handover at IIT Madras, Chennai.",
             defaultHash));
 
         users.add(buildUser("usr_3", "Priya Sundaram", "priya.s@annauniv.edu",
@@ -92,7 +92,7 @@ public class DataStore {
             "Final Year (2025)", true, 4.8, 11,
             "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=250&q=80",
             "Oct 2023", 8,
-            "IT Senior clearing dorm items and study materials. Safe handover inside CEG Canteen area.",
+            "IT Senior clearing dorm items and study materials. Handover at Anna University (CEG), Guindy.",
             defaultHash));
 
         users.add(buildUser("usr_4", "Karthik Subramanian", "karthik.s@vit.ac.in",
@@ -100,7 +100,7 @@ public class DataStore {
             "2nd Year (2027)", true, 4.9, 29,
             "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=250&q=80",
             "Aug 2023", 25,
-            "MechE student selling bicycles, hostel furniture, and drawing tools. Fast meetups near Technology Tower.",
+            "MechE student selling bicycles, hostel furniture, and drawing tools. Fast meetups at VIT University, Vellore.",
             defaultHash));
     }
 
@@ -122,7 +122,7 @@ public class DataStore {
             List.of("https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80",
                     "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=800&q=80"),
             "usr_1", "Ananya Sharma", "SRM IST Ramapuram, Chennai",
-            "Tech Park Lobby / Main Canteen", "2 hours ago", "2026-09-25T11:00:00Z",
+            "SRM IST Ramapuram, Chennai", "2 hours ago", "2026-09-25T11:00:00Z",
             184, 22, true));
 
         products.add(buildProduct("prod_2",
@@ -133,7 +133,7 @@ public class DataStore {
             List.of("https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
                     "https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=800&q=80"),
             "usr_2", "Rohan Verma", "IIT Madras, Chennai",
-            "Central Library Gate / Gajendra Circle", "4 hours ago", "2026-09-25T09:00:00Z",
+            "IIT Madras, Chennai", "4 hours ago", "2026-09-25T09:00:00Z",
             95, 12, true));
 
         products.add(buildProduct("prod_3",
@@ -143,7 +143,7 @@ public class DataStore {
             "Excellent for coding and graphic design. Includes HDMI, DisplayPort, and USB-C cables.",
             List.of("https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=800&q=80"),
             "usr_3", "Priya Sundaram", "Anna University (CEG), Guindy",
-            "Red Building / CEG Canteen", "5 hours ago", "2026-09-25T08:00:00Z",
+            "Anna University (CEG), Guindy", "5 hours ago", "2026-09-25T08:00:00Z",
             140, 19, true));
 
         products.add(buildProduct("prod_4",
@@ -153,7 +153,7 @@ public class DataStore {
             "Lightly used for 5 months. Includes original hardshell case, aux cable, and USB-C charging cable.",
             List.of("https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80"),
             "usr_4", "Karthik Subramanian", "VIT University, Vellore",
-            "Technology Tower / Food Court", "1 day ago", "2026-09-24T18:00:00Z",
+            "VIT University, Vellore", "1 day ago", "2026-09-24T18:00:00Z",
             230, 34, false));
 
         products.add(buildProduct("prod_6",
@@ -163,7 +163,7 @@ public class DataStore {
             "Essential for long study hours in hostel or PG room.",
             List.of("https://images.unsplash.com/photo-1580481072645-022f9a6d83d0?auto=format&fit=crop&w=800&q=80"),
             "usr_1", "Ananya Sharma", "SRM IST Ramapuram, Chennai",
-            "Girl Hostel Block B", "2 days ago", "2026-09-23T16:00:00Z",
+            "SRM IST Ramapuram, Chennai", "2 days ago", "2026-09-23T16:00:00Z",
             112, 14, false));
 
         products.add(buildProduct("prod_7",
@@ -173,7 +173,7 @@ public class DataStore {
             "Functions perfectly with solar/battery dual power.",
             List.of("https://images.unsplash.com/photo-1611125832047-1d7ad1e8e48b?auto=format&fit=crop&w=800&q=80"),
             "usr_2", "Rohan Verma", "IIT Madras, Chennai",
-            "Department of Electrical Engineering", "2 days ago", "2026-09-23T10:00:00Z",
+            "IIT Madras, Chennai", "2 days ago", "2026-09-23T10:00:00Z",
             88, 10, false));
 
         products.add(buildProduct("prod_8",
@@ -183,7 +183,7 @@ public class DataStore {
             "servo motors, ultrasonic sensors, jumper cables, breadboard, and relay modules.",
             List.of("https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80"),
             "usr_2", "Rohan Verma", "IIT Madras, Chennai",
-            "CFI (Centre for Innovation)", "3 days ago", "2026-09-22T15:00:00Z",
+            "IIT Madras, Chennai", "3 days ago", "2026-09-22T15:00:00Z",
             190, 28, true));
 
         products.add(buildProduct("prod_9",
@@ -193,7 +193,7 @@ public class DataStore {
             "Works fast and safely.",
             List.of("https://images.unsplash.com/photo-1517668808822-9ebe02f2a6e8?auto=format&fit=crop&w=800&q=80"),
             "usr_3", "Priya Sundaram", "Anna University (CEG), Guindy",
-            "Hostel Main Gate", "3 days ago", "2026-09-22T11:00:00Z",
+            "Anna University (CEG), Guindy", "3 days ago", "2026-09-22T11:00:00Z",
             145, 18, false));
     }
 
@@ -247,14 +247,14 @@ public class DataStore {
             "Rohan Verma", "IIT Madras, Chennai",
             "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80", true));
         t1.setItemTitle("MacBook Air M2");
-        t1.setLastMessage("Sounds good! Can we meet at SRM Tech Park Lobby at 4:30 PM today?");
+        t1.setLastMessage("Sounds good! Can we meet at SRM IST Ramapuram at 4:30 PM today?");
         t1.setTimestamp("10:42 AM"); t1.setUnread(false);
         t1.setChatHistory(List.of(
             new MessageThread.ChatMessage("them", "Hi Ananya! Is the MacBook Air M2 still available for inspection on campus today?", "10:30 AM"),
             new MessageThread.ChatMessage("me",   "Hello Rohan! Yes it is. Battery health is 96% and screen is scratchless.", "10:35 AM"),
             new MessageThread.ChatMessage("them", "Awesome. Would you accept ₹62,000 for quick handover today?", "10:38 AM"),
             new MessageThread.ChatMessage("me",   "I can do ₹63,000 final price. Includes full box and charger.", "10:40 AM"),
-            new MessageThread.ChatMessage("them", "Sounds good! Can we meet at SRM Tech Park Lobby at 4:30 PM today?", "10:42 AM")
+            new MessageThread.ChatMessage("them", "Sounds good! Can we meet at SRM IST Ramapuram at 4:30 PM today?", "10:42 AM")
         ));
         messages.add(t1);
 

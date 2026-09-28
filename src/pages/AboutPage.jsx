@@ -53,7 +53,7 @@ export const AboutPage = ({ onNavigate }) => {
               </CardHeader>
               <CardContent className="text-xs text-cx-400 leading-relaxed space-y-2">
                 <p>
-                  Zero shipping fees and zero transit delays. All handovers happen inside university grounds at libraries, canteens, or hostel blocks.
+                  Zero shipping fees and zero transit delays. All handovers happen inside official college grounds.
                 </p>
               </CardContent>
             </Card>

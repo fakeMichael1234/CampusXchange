@@ -227,7 +227,7 @@ export const ProductDetailPage = ({ productId, onNavigate }) => {
                   <MapPin className="w-4 h-4 text-cx-0" />
                   <span>CAMPUS HANDOVER SPOT</span>
                 </div>
-                <p className="text-cx-300 pl-6 font-sans">{product.pickupLocation || 'Central Library Lobby / Campus Food Court'}</p>
+                <p className="text-cx-300 pl-6 font-sans">{product.pickupLocation || product.campus || 'SRM IST Ramapuram, Chennai'}</p>
               </div>
 
               {/* Seller Profile Card */}
@@ -383,7 +383,7 @@ export const ProductDetailPage = ({ productId, onNavigate }) => {
             </div>
             <div className="flex justify-between">
               <span className="text-cx-400">HANDOVER SPOT:</span>
-              <span className="text-cx-0">{product.pickupLocation || 'Central Library'}</span>
+              <span className="text-cx-0">{product.pickupLocation || product.campus}</span>
             </div>
           </div>
           <p className="text-xs text-cx-400 font-sans">

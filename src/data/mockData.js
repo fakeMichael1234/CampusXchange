@@ -28,7 +28,7 @@ export const INITIAL_USERS = [
     avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80',
     joinedDate: 'Aug 2023',
     itemsSold: 18,
-    bio: 'CS Final Year student interested in AI and Web Dev. Quick handover near SRM Tech Park Lobby or Central Library.'
+    bio: 'CS Final Year student interested in AI and Web Dev. Handover at SRM IST Ramapuram, Chennai.'
   },
   {
     id: 'usr_2',
@@ -43,7 +43,7 @@ export const INITIAL_USERS = [
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80',
     joinedDate: 'Jan 2024',
     itemsSold: 12,
-    bio: 'EE Junior selling lab components, microcontrollers, and engineering textbooks. Pickup available near Gajendra Circle / Central Library.'
+    bio: 'EE Junior selling lab components, microcontrollers, and engineering textbooks. Handover at IIT Madras, Chennai.'
   },
   {
     id: 'usr_3',
@@ -58,7 +58,7 @@ export const INITIAL_USERS = [
     avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=250&q=80',
     joinedDate: 'Oct 2023',
     itemsSold: 8,
-    bio: 'IT Senior clearing dorm items and study materials. Safe handover inside CEG Canteen area.'
+    bio: 'IT Senior clearing dorm items and study materials. Handover at Anna University (CEG), Guindy.'
   },
   {
     id: 'usr_4',
@@ -73,7 +73,7 @@ export const INITIAL_USERS = [
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=250&q=80',
     joinedDate: 'Aug 2023',
     itemsSold: 25,
-    bio: 'MechE student selling bicycles, hostel furniture, and drawing tools. Fast meetups near Technology Tower.'
+    bio: 'MechE student selling bicycles, hostel furniture, and drawing tools. Fast meetups at VIT University, Vellore.'
   }
 ];
 
@@ -106,7 +106,7 @@ export const INITIAL_PRODUCTS = [
     sellerCollege: 'SRM IST Ramapuram, Chennai',
     verifiedSeller: true,
     campus: 'SRM IST Ramapuram, Chennai',
-    pickupLocation: 'Tech Park Lobby / Main Canteen',
+    pickupLocation: 'SRM IST Ramapuram, Chennai',
     postedDate: '2 hours ago',
     createdAt: '2026-09-25T11:00:00Z',
     views: 184,
@@ -130,7 +130,7 @@ export const INITIAL_PRODUCTS = [
     sellerCollege: 'IIT Madras, Chennai',
     verifiedSeller: true,
     campus: 'IIT Madras, Chennai',
-    pickupLocation: 'Central Library Gate / Gajendra Circle',
+    pickupLocation: 'IIT Madras, Chennai',
     postedDate: '4 hours ago',
     createdAt: '2026-09-25T09:00:00Z',
     views: 95,
@@ -153,7 +153,7 @@ export const INITIAL_PRODUCTS = [
     sellerCollege: 'Anna University (CEG), Guindy',
     verifiedSeller: true,
     campus: 'Anna University (CEG), Guindy',
-    pickupLocation: 'Red Building / CEG Canteen',
+    pickupLocation: 'Anna University (CEG), Guindy',
     postedDate: '5 hours ago',
     createdAt: '2026-09-25T08:00:00Z',
     views: 140,
@@ -176,7 +176,7 @@ export const INITIAL_PRODUCTS = [
     sellerCollege: 'VIT University, Vellore',
     verifiedSeller: true,
     campus: 'VIT University, Vellore',
-    pickupLocation: 'Technology Tower / Food Court',
+    pickupLocation: 'VIT University, Vellore',
     postedDate: '1 day ago',
     createdAt: '2026-09-24T18:00:00Z',
     views: 230,
@@ -199,7 +199,7 @@ export const INITIAL_PRODUCTS = [
     sellerCollege: 'SRM IST Ramapuram, Chennai',
     verifiedSeller: true,
     campus: 'SRM IST Ramapuram, Chennai',
-    pickupLocation: 'Girl Hostel Block B',
+    pickupLocation: 'SRM IST Ramapuram, Chennai',
     postedDate: '2 days ago',
     createdAt: '2026-09-23T16:00:00Z',
     views: 112,
@@ -222,7 +222,7 @@ export const INITIAL_PRODUCTS = [
     sellerCollege: 'IIT Madras, Chennai',
     verifiedSeller: true,
     campus: 'IIT Madras, Chennai',
-    pickupLocation: 'Department of Electrical Engineering',
+    pickupLocation: 'IIT Madras, Chennai',
     postedDate: '2 days ago',
     createdAt: '2026-09-23T10:00:00Z',
     views: 88,
@@ -245,7 +245,7 @@ export const INITIAL_PRODUCTS = [
     sellerCollege: 'IIT Madras, Chennai',
     verifiedSeller: true,
     campus: 'IIT Madras, Chennai',
-    pickupLocation: 'CFI (Centre for Innovation)',
+    pickupLocation: 'IIT Madras, Chennai',
     postedDate: '3 days ago',
     createdAt: '2026-09-22T15:00:00Z',
     views: 190,
@@ -268,7 +268,7 @@ export const INITIAL_PRODUCTS = [
     sellerCollege: 'Anna University (CEG), Guindy',
     verifiedSeller: true,
     campus: 'Anna University (CEG), Guindy',
-    pickupLocation: 'Hostel Main Gate',
+    pickupLocation: 'Anna University (CEG), Guindy',
     postedDate: '3 days ago',
     createdAt: '2026-09-22T11:00:00Z',
     views: 145,
@@ -332,7 +332,7 @@ export const INITIAL_MESSAGES = [
       online: true
     },
     itemTitle: 'MacBook Air M2',
-    lastMessage: 'Sounds good! Can we meet at SRM Tech Park Lobby at 4:30 PM today?',
+    lastMessage: 'Sounds good! Can we meet at SRM IST Ramapuram at 4:30 PM today?',
     timestamp: '10:42 AM',
     unread: false,
     chatHistory: [
@@ -340,7 +340,7 @@ export const INITIAL_MESSAGES = [
       { sender: 'me', text: 'Hello Rohan! Yes it is. Battery health is 96% and screen is scratchless.', time: '10:35 AM' },
       { sender: 'them', text: 'Awesome. Would you accept ₹62,000 for quick handover today?', time: '10:38 AM' },
       { sender: 'me', text: 'I can do ₹63,000 final price. Includes full box and charger.', time: '10:40 AM' },
-      { sender: 'them', text: 'Sounds good! Can we meet at SRM Tech Park Lobby at 4:30 PM today?', time: '10:42 AM' }
+      { sender: 'them', text: 'Sounds good! Can we meet at SRM IST Ramapuram at 4:30 PM today?', time: '10:42 AM' }
     ]
   },
   {
@@ -408,3 +408,4 @@ export const INITIAL_REPORTS = [
     status: 'Pending'
   }
 ];
+
